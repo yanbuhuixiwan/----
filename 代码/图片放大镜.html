@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>图片放大镜</title>
+   <style >
+     #photo{
+        margin: 100px auto;
+        padding: 10px; 
+        width: 800px;
+        height: 400px;
+        background-color: #096;
+        text-align: center;
+    }
+     #photo img{
+        width: 250px;
+        height: 190px;    
+    }
+    #photo img:hover{
+        transform: scale(2);
+        transition: 2s;
+    }
+   </style>
+</head>
+<body>
+    <div id="photo">
+        <img src="img/1.webp" alt="">
+        <img src="img/2.webp" alt="">
+        <img src="img/3.webp" alt="">
+        <img src="img/4.webp" alt="">
+        <img src="img/5.webp" alt="">
+        <img src="img/6.webp" alt="">
+    </div>
+</body>
+</html>

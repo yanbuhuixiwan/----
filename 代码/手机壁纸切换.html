@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机壁纸切换</title>
+    <style>
+        ul li{
+            list-style: none;
+        }
+        .IQOO{
+            width: 700px;
+            height: 700px;
+            /* border: 3px solid #096; */
+            margin: 100px auto;
+        }
+        .phone{
+            width: 200px;
+            height: 450px;
+            margin: 30px auto;
+            border: 3px solid #000;
+            border-radius: 30px;
+            background: url(img/2.webp) center/cover;
+        }
+        .album{
+            width: 600px;
+            height: 80px;
+            margin: 50px auto;
+            background-color: aqua;
+        }
+        .wallpage{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 15px 11.5px;
+            background: url(img/1.webp) center/cover;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        .wallpage:nth-child(2){
+            background: url(img/2.webp) center/cover;
+        }
+        .wallpage:nth-child(3){
+            background: url(img/3.webp) center/cover;
+        }
+        .wallpage:nth-child(4){
+            background: url(img/4.webp) center/cover;
+        }
+        .wallpage:nth-child(5){
+            background: url(img/5.webp) center/cover;
+        }
+        .wallpage:nth-child(6){
+            background: url(img/6.webp) center/cover;
+        }
+        .wallpage:nth-child(7){
+            background: url(img/7.webp) center/cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="IQOO"> 
+        <div class="phone"></div>
+        <ul class="album">
+            <li class="wallpage"></li>
+            <li class="wallpage"></li>
+            <li class="wallpage"></li>
+            <li class="wallpage"></li>
+            <li class="wallpage"></li>
+            <li class="wallpage"></li>
+            <li class="wallpage"></li>
+        </ul>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(".wallpage").click(function(){
+            $(".phone").css("background-image",$(this).css("background-image"))
+        })
+    </script>
+</body>
+</html>
